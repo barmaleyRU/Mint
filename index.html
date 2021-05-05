@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <link rel="stylesheet" href="assets/style.css">
+        <meta name="viewport" content="widht=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <svg style="display:none">
+       <symbol id="end" viewBox="0 0 306 306">
+           <g>
+		      <polygon points="35.7,58.65 153,175.951 270.3,58.65 306,94.351 153,247.35 0,94.351 		"/>
+	       </g>
+       </symbol>
+       <symbol id="top" viewBox="0 0 306 306">
+           <g>
+		      <polygon points="153,58.65 0,211.65 35.7,247.35 153,130.05 270.3,247.35 306,211.65 		"/>
+	       </g>
+       </symbol>
+       <symbol id="facebook" viewBox="0 0 430.113 430.114">
+           <g>
+                <path d="M158.081,83.3c0,10.839,0,59.218,0,59.218h-43.385v72.412h43.385v215.183h89.122V214.936h59.805
+                c0,0,5.601-34.721,8.316-72.685c-7.784,0-67.784,0-67.784,0s0-42.127,0-49.511c0-7.4,9.717-17.354,19.321-17.354
+                c9.586,0,29.818,0,48.557,0c0-9.859,0-43.924,0-75.385c-25.016,0-53.476,0-66.021,0C155.878-0.004,158.081,72.48,158.081,83.3z"/>
+            </g>
+       </symbol>
+       <symbol id="twitter" viewBox="0 0 512 512">
+           <g>
+		      <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+			 c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+			 c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+			 c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+			 c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+			 c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+			 C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+			 C480.224,136.96,497.728,118.496,512,97.248z"/>
+	       </g>
+       </symbol>
+       <symbol id="dribbble" viewBox="0 0 186.846 186.846">
+           <g>
+               <path d="M93.423,0.001C41.909,0.001,0,41.91,0,93.423s41.909,93.422,93.423,93.422s93.423-41.909,93.423-93.422
+	           S144.937,0.001,93.423,0.001z M154.303,44.061c10.488,12.91,16.945,29.205,17.482,46.968c-19.428-4.022-37.02-3.55-52.55-0.505
+	           c-2.812-6.576-5.723-12.841-8.661-18.762C127.487,64.476,142.211,55.17,154.303,44.061z M143.779,33.365
+	           c-12.003,10.956-25.913,19.068-40.156,25.057C93.169,39.305,83.167,24.909,77.074,16.728c5.276-1.124,10.743-1.727,16.349-1.727
+	           C112.58,15.001,130.145,21.915,143.779,33.365z M61.924,21.627c4.601,5.962,15.56,20.89,27.332,42.129
+	           C59.67,73.395,30.962,75.019,17.167,75.17C22.917,51.15,39.738,31.399,61.924,21.627z M15.082,90.208
+	           c0.148,0,0.291,0.001,0.442,0.001c9.532,0,26.996-0.641,47.556-4.39c11.73-2.139,22.853-5.018,33.29-8.586
+	           c2.717,5.415,5.418,11.127,8.037,17.114c-14.614,4.705-26.938,11.475-36.7,18.197c-16.37,11.273-27.838,23.78-34.1,31.513
+	           C22.013,130.384,15,112.712,15,93.423C15,92.345,15.038,91.276,15.082,90.208z M44.416,154.582
+	           c5.391-6.788,16.364-19.143,32.237-29.984c10.787-7.368,21.947-12.842,33.436-16.435c6.666,17.278,12.357,36.369,15.75,56.64
+	           c-9.888,4.508-20.858,7.042-32.416,7.042C74.891,171.845,57.852,165.37,44.416,154.582z M139.639,156.726
+	           c-3.497-18.617-8.712-36.122-14.741-52.12c14.83-2.502,30.157-1.986,45.899,1.55C167.402,126.846,155.889,144.83,139.639,156.726z"/>
+           </g>
+       </symbol>
+        </svg>
+
+        <!-----Header----->
+   
+        <header class="header">
+            <div class="container">
+                <div class="header__row">
+                    <div class="logo">
+                        <img class="header__logo" src=assets/img/logo.png height="85px">
+                    </div>
+                    <nav class="menu">
+                            <a class="menu__link" href="#">Work</a>
+                            <a class="menu__link" href="#">About</a>
+                            <a class="menu__link" href="#">Blog</a>
+                            <a class="menu__link" href="#">Contact</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    
+        <!-----Hero----->
+   
+        <div class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <div class="column">
+                        <div class="title">
+                            <div class="hero__title">
+                                Hello!!!<br>We Are Creative Digital Agency.
+                            </div>
+                        </div>
+                        <div class="subtitle">
+                            <div class="hero__subtitle">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae maiores iure, harum repudiandae. Eaque est quod reiciendis perspiciatis. Voluptatibus, qui.
+                            </div>
+                        </div>
+                        <button class="button">send message</button>
+                    </div>
+                    <div class="image">
+                        <img class="hero__image" src="assets/img/1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>      
+    
+        <!-----Work----->    
+    
+        <div class="work">
+            <div class="container">
+                <div class="work__inner">
+                    <div class="title">
+                        <div class="work__title">Work showcase.</div>
+                    </div>
+                    <div class="work__menu">
+                        <nav class="menu">
+                            <a class="work__link work__link--active" href="#">all</a>
+                            <a class="work__link" href="#">branding</a>
+                            <a class="work__link" href="#">illustration</a>
+                            <a class="work__link" href="#">web</a>
+                        </nav>
+                        <a href="#" class="svg-link">newest first&nbsp;
+                            <svg class="svg-link__item">
+                                <use xlink: href="#end"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="gallery">
+                        <div class="gallery__column">
+                            <div class="gallery__item">
+                                <img class="gallery__img" src="assets/img/small1.jpg" alt="" height="300px" width="370px">
+                                <div class="select-work">
+                                    <div class="select__title">ArtWork</div>
+                                    <div class="select__text">Branding</div>
+                                </div>
+                            </div>
+                            <div class="gallery__item">
+                                <img class="gallery__img" src="assets/img/big1.jpg" alt="" height="500px" width="370px">
+                                <div class="select-work">
+                                    <div class="select__title">ArtWork</div>
+                                    <div class="select__text">Branding</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery__column">
+                            <div class="gallery__item">
+                                <img class="gallery__img" src="assets/img/big2.jpg" alt=""height="500px" width="370px">
+                                <div class="select-work">
+                                    <div class="select__title">ArtWork</div>
+                                    <div class="select__text">Branding</div>
+                                </div>
+                            </div>
+                            <div class="gallery__item">
+                                <img class="gallery__img" src="assets/img/small2.jpg" alt="" height="300px" width="370px">
+                                <div class="select-work">
+                                    <div class="select__title">ArtWork</div>
+                                    <div class="select__text">Branding</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery__column">
+                            <div class="gallery__item">
+                                <img class="gallery__img" src="assets/img/small3.jpg" alt="" height="300px" width="370px">
+                                <div class="select-work">
+                                    <div class="select__title">ArtWork</div>
+                                    <div class="select__text">Branding</div>
+                                </div>
+                            </div>
+                            <div class="gallery__item">
+                                <img class="gallery__img" src="assets/img/big3.jpg" alt="" height="500px" width="370px">
+                                <div class="select-work">
+                                    <div class="select__title">ArtWork</div>
+                                    <div class="select__text">Branding</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="button button__work">show me more</button>
+               </div>
+            </div>    
+        </div>
+    
+        <!-----Portners----->
+    
+        <div class="portners">
+            <div class="container">
+                <div class="portners__inner">          
+                    <img class="portners__image" src="assets/img/partner-1.png">
+                    <img class="portners__image" src="assets/img/partner-2.png">
+                    <img class="portners__image" src="assets/img/partner-3.png">
+                    <img class="portners__image" src="assets/img/partner-4.png">
+                    <img class="portners__image" src="assets/img/partner-5.png">
+                    <img class="portners__image" src="assets/img/partner-6.png">
+                </div>
+            </div>
+        </div>   
+    
+        <!-----About----->    
+    
+        <div class="about">
+            <div class="container">
+                <div class="about__header">
+                    <div class="title">
+                        <div class="about__title">About us.</div>
+                    </div>
+                    <div class="subtitle">
+                        <div class="about__subtitle">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio fuga qui, beatae quisquam deleniti molestiae, veritatis asperiores praesentium doloribus nihil!
+                        </div>
+                    </div>
+                </div>
+                <div class="about__row">
+                    <div class="about__column">
+                        <div class="item-about">
+                            <img class="item-about__image" src="assets/img/luke.webp" alt="" height="420px" width="370px">
+                            <div class="stiker">
+                                <div class="stiker__title">Luke Skywalker</div>
+                                <div class="stiker__subtitle">Web designer</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__column">
+                        <div class="item-about">
+                            <img class="item-about__image" src="assets/img/luke1.jpg" alt="" height="420px" width="370px">
+                            <div class="stiker">
+                                <div class="stiker__title">Luke Skywalker</div>
+                                <div class="stiker__subtitle">Web designer</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__column">
+                        <div class="item-about">
+                            <div class="item-about__title">Little About Us</div>
+                            <div class="item-about__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet veniam totam molestias suscipit illum laudantium enim sequi minus dolore veritatis.</div>
+                            <button class="button button__about-small">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-----Blog----->    
+    
+        <div class="blog">
+            <div class="container">
+                <div class="blog__header">
+                    <div class="title">
+                        <div class="blog__title">Our Blog.</div>
+                    </div>
+                    <div class="subtitle">
+                        <div class="blog__subtitle">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio fuga qui, beatae quisquam deleniti molestiae, veritatis asperiores praesentium doloribus nihil!
+                        </div>
+                    </div>
+                </div>
+                <div class="blog__row">
+                    <div class="blog__column">
+                        <div class="item-blog">
+                            <div class="item-blog__image">
+                                <img src="assets/img/blog1.jpg" alt="" height="280px" width="370px">
+                                <div class="select-blog">
+                                    <div class="select-blog__title">Read More</div>
+                                </div>
+                            </div>
+                            
+                            <div class="item-blog__title">Super Blog Article</div>
+                            <div class="item-blog__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet veniam totam molestias suscipit illum laudantium enim sequi minus dolore veritatis.</div>
+                            <div class="item-blog__date">20 May 2020</div>
+                        </div>
+                    </div>
+                    <div class="blog__column">
+                        <div class="item-blog">
+                            <div class="item-blog__image">
+                                <img src="assets/img/blog2.jpg" alt="" height="280px" width="370px">
+                                <div class="select-blog">
+                                    <div class="select-blog__title">Read More</div>
+                                </div>
+                            </div>
+                            
+                            <div class="item-blog__title">Super Blog Article</div>
+                            <div class="item-blog__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet veniam totam molestias suscipit illum laudantium enim sequi minus dolore veritatis.</div>
+                            <div class="item-blog__date">20 May 2020</div>
+                        </div>
+                    </div>
+                    <div class="blog__column">
+                        <div class="item-blog">
+                            <div class="item-blog__image">
+                                <img src="assets/img/blog3.jpg" alt="" height="280px" width="370px">
+                                <div class="select-blog">
+                                    <div class="select-blog__title">Read More</div>
+                                </div>
+                            </div>
+                            
+                            <div class="item-blog__title">Super Blog Article</div>
+                            <div class="item-blog__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet veniam totam molestias suscipit illum laudantium enim sequi minus dolore veritatis.</div>
+                            <div class="item-blog__date">20 May 2020</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-----Contacts----->
+
+        <div class="contacts">
+            <div class="container">
+                <div class="contacts__header">
+                    <div class="title">
+                        <div class="contacts__title">Contact us.</div>
+                    </div>
+                    <div class="subtitle">
+                        <div class="contacts__subtitle">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio fuga qui, beatae quisquam deleniti molestiae, veritatis asperiores praesentium doloribus nihil!
+                        </div>
+                    </div>
+                </div>
+                <div class="contacts__row">
+                    <div class="contacts__column">
+                        <div class="column__title">Send Us Message</div>
+                        <div class="form">
+                            <form action="#" method="post">
+                                <div class="input__form">
+                                    Name
+                                    <input type="text" name="Name" value="">
+                                </div>
+                                <div class="input__form">
+                                    Email
+                                    <input type="email" name="Email" value="">
+                                </div>
+                                <div class="input__form">
+                                    <p>Message</p>
+                                    <textarea name="Message" cols="50" rows="8"></textarea>
+                                </div>
+                            </form>
+                            <button class="button">send message</button>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img class="hero__image" src="assets/img/contact.png" alt="">
+                    </div>
+                </div>  
+            </div>
+        </div>
+    
+        <!-----Found----->
+
+        <div class="found">
+            <div class="container">
+                <div class="found__row">
+                    <div class="found__column">
+                        <div class="item-found">
+                            <div class="item-found__icon">
+                                <img src="assets/img/map.png" alt="">
+                            </div>
+                            <div class="item-found__text">1211 Awesome Avenue, NY USD</div>
+                        </div>
+                    </div>
+                    <div class="found__column">
+                        <div class="item-found">
+                            <div class="item-found__icon">
+                                <img src="assets/img/phone.png" alt="">
+                            </div>
+                            <div class="item-found__text">+00 123-456-78 +00 123-456-78</div>
+                        </div>
+                    </div>
+                    <div class="found__column">
+                        <div class="item-found">
+                            <div class="item-found__icon">
+                                <img src="assets/img/page.png" alt="">
+                            </div>
+                            <div class="item-found__text">mint@mintmail.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-----Social----->
+
+        <div class="social">
+            <svg class="social__link">
+                <use xlink:href="#facebook"></use>
+            </svg>
+            <svg class="social__link">
+                <use xlink:href="#twitter"></use>
+            </svg>
+            <svg class="social__link">
+                <use xlink:href="#dribbble"></use>
+            </svg>
+        </div>
+                                               
+        <!-----Footer----->
+
+        <footer>
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="logo">
+                        <img class="footer__logo" src="assets/img/LogoFooter.png" height="85px">
+                    </div>
+                    <div class="right">&copy; 2020 - Mint, All Right Reserved</div>
+                
+                    <a href="#" class="back">Back to top&nbsp;
+                        <svg class="svg-link svg-link--footer">
+                            <use xlink: href="#top"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>   
+        </footer>
+    </body>
+</html>
